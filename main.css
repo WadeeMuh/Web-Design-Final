@@ -3,22 +3,26 @@ body{
 }
 
 header {
-  padding: 1em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   background-color: rgb(34, 41, 80);
-  padding: 1em;
 }
 
 h1 a {
   text-decoration: none;
   color: white;
   font-size: 2rem;
+  background-color: rgb(22, 27, 59);
+  padding: 0 .5em;
+  border-right: 5px solid black;
+  display: flex;
+  align-items: center;
+  padding: .5em 1em .5em .5em;
 }
 
 nav {
-  padding: 1em;
+  padding: 0 2vw 0 0;
   font-size: 85%;
 }
 
@@ -27,12 +31,31 @@ nav ul {
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
+  height: 100%;
 }
 
 nav a {
-  padding: .5em 2em;
+  padding: .5em 3vw;
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+  background-color: rgb(22, 27, 59);
+  border-radius: .5em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  margin: 2em;
 }
 
 img {
