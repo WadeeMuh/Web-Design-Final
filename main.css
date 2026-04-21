@@ -41,14 +41,14 @@ nav ul {
 nav a {
   padding: .5em;
   margin-right: 3vw;
-  color: rgb(255, 255, 255);
+  color: rgb(231, 231, 231);
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
   font-size: 1.7rem;
-  border-radius: .5em;
+  color: rgb(255, 255, 255);
 }
 
 main {
@@ -84,7 +84,7 @@ img {
 /* Projects Page */
 
 .card-grid {
-  margin-top: 10em;
+  margin-top: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -94,7 +94,7 @@ img {
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  border: 0.5em solid rgb(255, 255, 255);
+  border: 0.15em solid rgb(255, 255, 255);
 }
 
 .card a {
@@ -102,13 +102,37 @@ img {
   color: white;
   line-height: 1.5;
   font-size: 1.2em;
+  transition: all 0.5s ease;
 }
 
 .card-text {
   list-style-type: none;
 }
 
+.card a:hover {
+  text-decoration: underline;
+  font-size: 1.25em;
+}
+
 h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  gap: 5rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.section-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.sections h2 {
+  font-size: 6em;
 }
