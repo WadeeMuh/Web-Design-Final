@@ -340,8 +340,7 @@ h3 {
     padding: 1rem;
   }
 
-  .sections h2,
-  .work-area h2 {
+  .sections h2, .work-area h2 {
     font-size: 14vw;
   }
 
