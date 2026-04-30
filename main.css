@@ -68,7 +68,7 @@ main {
 
 h2 {
   color: white;
-  font-size: 8vw;
+  font-size: 10em;
   text-align: center;
   margin-top: 1.5em;
 }
@@ -76,7 +76,7 @@ h2 {
 .abt-me {
   text-align: center;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.5em;
   padding: 1em 1em;
   line-height: 1.2;
   max-width: 50%;
@@ -312,6 +312,14 @@ h3 {
     border-bottom: 2px solid white;
   }
 
+  h2 {
+    font-size: 15vw;;
+  }
+
+  .abt-me {
+    font-size: 2vw;
+  }
+
   .skills-area {
     width: 95%;
     padding: 1rem;
@@ -323,5 +331,33 @@ h3 {
 
   .skills-area .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sections {
+    grid-template-columns: 1fr;
+    width: 95%;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .sections h2,
+  .work-area h2 {
+    font-size: 14vw;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-previews {
+    display: none;
+  }
+
+  .work-area {
+    padding: 2rem 1rem;
+  }
+
+  .contact-link {
+    font-size: 3vw;
   }
 }
