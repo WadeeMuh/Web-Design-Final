@@ -1,4 +1,4 @@
-body{
+body {
   background-color: black;
   font-family: sans-serif;
 }
@@ -76,7 +76,7 @@ h2 {
 .abt-me {
   text-align: center;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.25vw;
   padding: 1em 1em;
   line-height: 1.2;
   max-width: 50%;
@@ -219,11 +219,96 @@ h3 {
   list-style-type: square;
 }
 
-/* @media (max-width: 1075px) {
-  nav ul {
-    font-size: 1rem
+/* Contact Page */
+
+.contact-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 1rem;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+  display: block;
+  letter-spacing: -0.05rem;
+}
+
+.contact-link:hover {
+  color: rgb(178, 189, 255);
+  transform: scale(1.05);
+}
+
+.contact-link i {
+  font-size: 0.85em;
+  margin-right: 0.3em;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.nav-home {
+  display: none;
+}
+
+@media (max-width: 1075px) {
+  h1 a {
+    display: none
   }
-  nav a:hover {
-    font-size: 1.2rem;
+
+  nav a {
+    display: none;
   }
-} */
+
+  .hamburger {
+    display: block;
+  }
+
+  nav.open {
+    position: fixed;
+    left: 0;
+    width: 60vw;
+    height: 100vh;
+    background-color: rgb(22, 27, 59);
+    border-right: 5px solid white;
+    z-index: 99;
+  }
+
+  nav.open ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+
+  }
+
+  nav.open a {
+    display: block;
+    font-size: 1.5rem;
+    padding: .75rem 0;
+  }
+
+  .nav-home {
+    display: block;
+    border-bottom: 2px solid white;
+  }
+}
