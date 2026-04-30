@@ -24,6 +24,7 @@ h1 a {
   position: absolute;
   height: 100%;
   padding: 0 1em 0 .5em;
+  letter-spacing: -.15rem;
 }
 
 nav {
@@ -54,7 +55,7 @@ nav a {
 
 nav a:hover {
   color: rgb(255, 255, 255);
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 main {
@@ -78,9 +79,10 @@ h2 {
   font-size: 1.5em;
   padding: 1em 1em;
   line-height: 1.2;
-  font-style: italic;
   max-width: 50%;
-  margin-top: 3em
+  margin-top: 3em;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 img {
@@ -97,10 +99,10 @@ img {
 
 .card {
   color: white;
-  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   border: 0.15em solid rgb(255, 255, 255);
+  padding: 1rem;
 }
 
 .card a {
@@ -108,21 +110,29 @@ img {
   color: white;
   line-height: 1.5;
   font-size: 1.2em;
-  transition: all 0.5s ease;
-}
-
-.card-text {
-  list-style-type: none;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .card a:hover {
   text-decoration: underline;
-  font-size: 1.25em;
+  transform: scale(1.075);
+  color: rgb(178, 189, 255);
+}
+
+.card-text {
+  list-style-position: outside;
+  list-style-type: square;
+  padding-left: 1.25rem;
 }
 
 h3 {
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(34, 41, 80);
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 0.15em solid white;
 }
 
 .sections {
