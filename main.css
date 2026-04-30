@@ -76,7 +76,7 @@ h2 {
 .abt-me {
   text-align: center;
   color: white;
-  font-size: 1.25vw;
+  font-size: 1.5vw;
   padding: 1em 1em;
   line-height: 1.2;
   max-width: 50%;
@@ -310,5 +310,18 @@ h3 {
   .nav-home {
     display: block;
     border-bottom: 2px solid white;
+  }
+
+  .skills-area {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .skills-area h2 {
+    font-size: 14vw;
+  }
+
+  .skills-area .card-grid {
+    grid-template-columns: 1fr;
   }
 }
