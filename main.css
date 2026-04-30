@@ -85,10 +85,6 @@ h2 {
   letter-spacing: 1px;
 }
 
-img {
-  max-width: 20rem
-}
-
 /* Projects Page */
 
 .card-grid {
@@ -151,6 +147,35 @@ h3 {
 
 .sections h2 {
   font-size: 6em;
+}
+
+.project-previews {
+  position: relative;
+  height: 340px;
+  margin-top: 5em;
+}
+
+.project-previews img {
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+.project-img1 {
+  transform: rotate(-4deg);
+}
+
+.project-img2 {
+  margin-top: 10em;
+  transform: rotate(3deg);
+  margin-left: 15%;
+}
+
+.project-img3 {
+  margin-top: 20em;
+  transform: rotate(-1.5deg);
 }
 
 /* @media (max-width: 1075px) {
